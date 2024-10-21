@@ -21,6 +21,9 @@ def setup_bedrock_client():
     """Setup the Bedrock client."""
     return boto3.client(service_name="bedrock-runtime")
 
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 def create_request_body(
     max_tokens, temperature, top_p, top_k, system_prompt, user_prompt, assistant_prompt
@@ -110,6 +113,7 @@ def display_response(response, analysis_time):
 
 def main():
     st.set_page_config(page_title="Valorant ESports Assistant Manager", layout="wide")
+    load_css("styles.css")
 
     hide_decoration_bar_style = """
     <style>
