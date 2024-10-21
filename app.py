@@ -120,7 +120,7 @@ def main():
 
     st.markdown("### Valorant ESports Assistant Manager")
     st.markdown(
-        "The project is focused on building a VALORANT Assistant Manager using Streamlit and Amazon Bedrock to assist with team management by leveraging The project is focused on building a VALORANT Assistant Manager using Streamlit and Amazon Bedrock to assist with team management by leveraging LLM's like Claude v2.large language models (for our case, Claude v2)."
+        "The project is focused on building a VALORANT Assistant Manager using Streamlit and Amazon Bedrock to assist with team management by leveraging The project is focused on building a VALORANT Assistant Manager using Streamlit and Amazon Bedrock to assist with team management by leveraging LLM's (for our case, Claude v2)."
     )
 
     with st.form("my_form"):
