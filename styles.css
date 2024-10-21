@@ -1,28 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body {
     background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
     color: white;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif; /* Use Anton as the main font */
 }
+
 header {
     visibility: hidden;
 }
+
 .stButton>button {
     background-color: #ff4655;
     color: white;
     font-size: 18px;
+    font-family: 'Anton', sans-serif; /* Button font */
     border-radius: 5px;
 }
+
 .stTextArea, .stSlider {
     background-color: #1f1f1f;
     color: white;
+    font-family: 'Anton', sans-serif;
 }
+
 .stTextArea textarea {
     background-color: #2a2a2a;
     color: #ff4655;
+    font-family: 'Anton', sans-serif; /* Text area font */
 }
+
 .stSelectbox {
     color: #ff4655;
+    font-family: 'Anton', sans-serif; /* Dropdown font */
 }
+
 footer {
     visibility: hidden;
 }
