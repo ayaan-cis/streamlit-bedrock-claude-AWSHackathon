@@ -109,7 +109,7 @@ def display_response(response, analysis_time):
 
 
 def main():
-    st.set_page_config(page_title="Streamlit-Bedrock-Anthropic Application Example")
+    st.set_page_config(page_title="Valorant ESports Assistant Manager", layout="wide")
 
     hide_decoration_bar_style = """
     <style>
