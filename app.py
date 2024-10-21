@@ -118,9 +118,9 @@ def main():
 
     st.markdown(hide_decoration_bar_style, unsafe_allow_html=True)
 
-    st.markdown("### Streamlit-Bedrock-Anthropic Claude 3 Example")
+    st.markdown("### Valorant ESports Assistant Manager")
     st.markdown(
-        "Example of making an inference request to an Anthropic Claude 3 foundation model on Amazon Bedrock for text generation."
+        "The project is focused on building a VALORANT Assistant Manager using Streamlit and Amazon Bedrock to assist with team management by leveraging The project is focused on building a VALORANT Assistant Manager using Streamlit and Amazon Bedrock to assist with team management by leveraging LLM's like Claude v2.large language models (for our case, Claude v2)."
     )
 
     with st.form("my_form"):
@@ -128,24 +128,26 @@ def main():
         system_prompt = st.text_area(
             height=50,
             label="System (Optional)",
-            value="You are a trained dietitian and nutritionist. You are experienced at providing advice on healthy eating habits.",
+            value="You are an a manager for a professional VALORANT team. You have a busy schedule and need help managing your team. You are looking for a good roster that covers all bases.",
         )
 
         user_prompt = st.text_area(
             height=350,
             label="User (Required)",
-            value="""I am a busy professional who is worried about my poor eating habits. I will be working late tonight. Provide a dinner suggestion I can prepare.
+            value="""I am struggling to manage my team and need help choosing what players work with certain maps and operators. Give me a proper roster that covers all bases.
 
 Consider all of the following requirements:
 
 <requirements>
-    - Include recipe with ingredients, preparation instructions, recommended serving size
-    - Estimate calorie count per serving
-    - Must take less than 45 minutes to prepare
-    - Must make no more than 2 servings
+    - Player Roles & Agent Specialization
+    - Team Synergy & Communication
+    - Adaptability & Meta Awareness
+    - Mechanical Skill & Game Sense
+    - Map Knowledge & Strategy
+    - Statistics & Performance Metrics
 </requirements>
 
-Think step-by-step before you choose a meal idea.
+Think step-by-step before you choose the roster.
 """,
         )
 
